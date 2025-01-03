@@ -12,3 +12,23 @@
 .item {
   margin: 20px;
 }
+
+@media (max-width: 500px) {
+  .footer {
+    font-size: 1.1em;
+    padding: 12px 10px;
+  }
+  .item {
+    margin: 10px 12px;
+  }
+}
+
+@media (max-width: 300px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .item {
+    margin: 5px;
+  }
+}

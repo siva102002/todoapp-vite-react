@@ -4,8 +4,10 @@ export default function Form({ todos, setTodos }) {
   const [todo, setTodo] = useState({ name: "", done: false });
   function handleTodos(e) {
     e.preventDefault();
-    setTodos([...todos, todo]);
-    setTodo({ name: "", done: false });
+    if (todo.name !== "") {
+      setTodos([...todos, todo]);
+      setTodo({ name: "", done: false });
+    }
   }
   return (
     <form className={styles.todoForm} onSubmit={(e) => handleTodos(e)}>

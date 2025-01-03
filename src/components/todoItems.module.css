@@ -1,9 +1,29 @@
 .todoContainer {
   background-color: #fff;
+  max-width: 60%;
   width: 500px;
   padding: 20px;
   margin: 0 auto;
   border-radius: 8px;
   margin-top: 50px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.todoContainer .greet {
+  display: block;
+  text-align: center;
+  max-width: 100%;
+  width: 200px;
+  margin: 0 auto;
+  color: #494949;
+  font-size: 18px;
+  width: 500px;
+}
+
+@media (max-width: 500px) {
+  .todoContainer {
+    max-width: 80%;
+  }
+  .todoContainer .greet {
+    font-size: 14px;
+  }
 }
